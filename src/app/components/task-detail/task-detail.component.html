@@ -1,0 +1,11 @@
+<div class="outer-box">
+  <div class="inner-box">
+    <div *ngIf="task" class="task-details">
+      <p class="detail-row"><span class="label">Title:</span> {{ task.title }}</p>
+      <p class="detail-row"><span class="label">Description:</span> {{ task.description }}</p>
+      <p class="detail-row"><span class="label">Due Date:</span> {{ task.dueDate }}</p>
+      <p class="detail-row"><span class="label">Status:</span> {{ task.completed ? 'Completed' : 'Not Completed' }}</p>
+    </div>
+    <button class="back-button" (click)="navigateBack()">Back</button>
+  </div>
+</div>
